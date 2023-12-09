@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Interatividade Bancária</title>
+  </head>
+  <body>
+    <h1>FinPOO - Sistema Bancário</h1>
+
+    <div id="contas-info">
+      <h2>Informações das Contas</h2>
+      <p id="info-conta-corrente-Alice"></p>
+      <p id="info-conta-poupanca-Alice"></p>
+      <p id="info-conta-corrente-Jao"></p>
+      <p id="info-conta-poupanca-Jao"></p>
+      <p id="mensagem-erro"></p>
+      <h1>Interagir com as Contas</h1>
+      <label for="valor-ope">Valor da operação:</label>
+      <input type="number" id="valor-ope" />
+    </div>
+
+    <div id="interacao-contas">
+      <div id="containerAlice">
+        <h2>"Área Conta Alice"</h2>
+
+        <button onclick="realizarDeposito(contaCorrenteAlice)">
+          Depositar na Conta Corrente Alice
+        </button>
+
+        <button onclick="realizarSaque(contaCorrenteAlice)">
+          Sacar na Conta Corrente Alice
+        </button>
+
+        <button onclick="realizarDeposito(contaPoupancaAlice)">
+          Depositar na Conta Poupança Alice
+        </button>
+
+        <button onclick="realizarSaque(contaPoupancaAlice)">
+          Sacar na Conta Poupança Alice
+        </button>
+      </div>
+
+      <div id="containerTransferencia">
+        <h2>"Área de Transferência"</h2>
+
+        <button
+          class="meio"
+          onclick="realizarTransferencia(contaCorrenteAlice, contaCorrenteJao)"
+        >
+          Transferir da Conta Corrente Alice para a Conta Corrente Jao
+        </button>
+
+        <button
+          class="meio"
+          onclick="realizarTransferencia(contaCorrenteAlice, contaPoupancaJao)"
+        >
+          Transferir da Conta Corrente Alice para a Conta Poupança Jao
+        </button>
+
+        <button
+          class="meio"
+          onclick="realizarTransferencia(contaCorrenteJao, contaPoupancaJao)"
+        >
+          Transferir da Conta Corrente Jão para a Conta Poupança Jao
+        </button>
+      </div>
+
+      <div id="containerJao">
+        <h2>"Área Conta Jão"</h2>
+        <button onclick="realizarDeposito(contaCorrenteJao)">
+          Depositar na Conta Corrente Jão
+        </button>
+
+        <button onclick="realizarSaque(contaCorrenteJao)">
+          Sacar na Conta Corrente Jão
+        </button>
+
+        <button onclick="realizarDeposito(contaPoupancaJao)">
+          Depositar na Conta Poupança Jão
+        </button>
+
+        <button onclick="realizarSaque(contaPoupancaJao)">
+          Sacar na Conta Poupança Jao
+        </button>
+
+        <br />
+      </div>
+    </div>
+
+    <script src="finPOO.js"></script>
+  </body>
+</html>

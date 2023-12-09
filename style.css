@@ -1,0 +1,89 @@
+
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 , h2 {
+    text-align: center;
+    color: #004080;
+  }
+  
+  #contas-info {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contas-info h2 {
+    color: #004080;
+  }
+  
+  #contas-info p {
+    margin: 0;
+  }
+  
+  #mensagem-erro {
+    color: #d9534f;
+    font-weight: bold;
+  }
+  
+  #interacao-contas {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    
+  }
+  
+  .container {
+    background-color: #ffffff;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 50px;
+  }
+  #containerTransferencia{
+    align-items: center;
+    width: 50%;
+    
+    
+  }
+
+  label {
+    display: block;
+    margin: 10px;
+    text-align: center;
+    color: #004080;
+    font-size: 25px;
+  }
+  
+  input {
+    width: 30%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  
+  button {
+    background-color: #004080;
+    color: #ffffff;
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button.meio{
+    width: 94%;
+    
+  }
+  
+  button:hover {
+    background-color: #003366;
+  }
+  
